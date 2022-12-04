@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+    <div id="header">
+        <h2>MVC PUBS</h2>
+    </div>  
+    <div id="menu">
+
+            @Html.ActionLink("Home", "Index", "Home")            
+            @Html.ActionLink("Store", "Index", "Store")
+
+    </div>
+    <div id="content">
+            @RenderBody()
+    </div>
+    <div id="footer">
+        <p>Info@pubs.com</p>
+    </div>
+
+    </div>
+
+</body>
+</html>
